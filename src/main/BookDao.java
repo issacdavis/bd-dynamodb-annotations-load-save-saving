@@ -32,6 +32,6 @@ public class BookDao {
      * @param book is the item that is being saved to the table
      */
     public void saveBook(Book book) {
-        // PARTICIPANTS: Save a Book to the table
+        dynamoDBMapper.save(book);
     }
 }
